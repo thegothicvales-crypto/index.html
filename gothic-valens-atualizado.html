@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gothic Valens — Nossos Links</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      min-height: 100vh;
+      background: #050505;
+      color: #eee;
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      justify-content: center;
+      padding: 42px 18px;
+    }
+    .page {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+    }
+    .crest {
+      width: 76px;
+      height: 76px;
+      border: 1px solid #777;
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      display: grid;
+      place-items: center;
+    }
+    .cross {
+      position: relative;
+      width: 25px;
+      height: 48px;
+    }
+    .cross::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 48px;
+      left: 12px;
+      top: 0;
+      background: #eee;
+    }
+    .cross::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      left: 0;
+      top: 14px;
+      background: #eee;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 68px);
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      margin: 18px 0 58px;
+      color: #999;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 7px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .link {
+      min-height: 104px;
+      border: 1px solid #777;
+      border-radius: 20px;
+      color: #eee;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      padding: 0 28px;
+      transition: background .2s, border-color .2s;
+    }
+    .link:hover {
+      background: #111;
+      border-color: #aaa;
+    }
+    .number {
+      width: 80px;
+      flex: 0 0 80px;
+      color: #888;
+      font-size: 20px;
+      letter-spacing: 4px;
+      text-align: center;
+      padding-right: 22px;
+      border-right: 1px solid #777;
+    }
+    .label {
+      padding-left: 28px;
+      font-size: clamp(19px, 3vw, 25px);
+      letter-spacing: 1.5px;
+    }
+    footer {
+      margin-top: 48px;
+      color: #666;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 6px;
+    }
+    @media (max-width: 520px) {
+      body { padding: 34px 16px; }
+      .subtitle { margin-bottom: 42px; }
+      .link { min-height: 88px; padding: 0 16px; border-radius: 17px; }
+      .number { width: 55px; flex-basis: 55px; padding-right: 12px; font-size: 16px; }
+      .label { padding-left: 16px; font-size: 17px; letter-spacing: 1px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="crest" aria-hidden="true">
+      <div class="cross"></div>
+    </div>
+
+    <h1>Gothic Valens</h1>
+    <div class="subtitle">NOSSOS LINKS</div>
+
+    <section class="links">
+      <a class="link" href="https://www.instagram.com/ghotic_valens?stkn=ZnBpdmpieG12bm96" target="_blank" rel="noopener">
+        <span class="number">01</span>
+        <span class="label">Instagram · @ghotic_valens</span>
+      </a>
+
+      <a class="link" href="https://www.tiktok.com/@aryvalen_" target="_blank" rel="noopener">
+        <span class="number">02</span>
+        <span class="label">TikTok · @aryvalen_</span>
+      </a>
+
+      <a class="link" href="https://www.tiktok.com/@vik_valen" target="_blank" rel="noopener">
+        <span class="number">03</span>
+        <span class="label">TikTok · @vik_valen</span>
+      </a>
+
+      <a class="link" href="https://privacy.com.br/checkout/Gothicvalens" target="_blank" rel="noopener">
+        <span class="number">04</span>
+        <span class="label">Privacy · Gothicvalens</span>
+      </a>
+    </section>
+
+    <footer>GOTHIC VALENS</footer>
+  </main>
+</body>
+</html>
